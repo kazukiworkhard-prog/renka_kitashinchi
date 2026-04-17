@@ -84,16 +84,18 @@
 ]
 </script>
 
-<link rel="stylesheet" href="renka.css">
+<style>
+#loader{position:fixed;inset:0;background:#0f0d0b;z-index:3000;display:flex;align-items:center;justify-content:center;}
+.skip-loader #loader{display:none!important}
+</style>
+<link rel="preload" href="renka.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="renka.css"></noscript>
 
-<script src="slideshow.js" defer>
-
-</script>
+<script src="slideshow.js" defer></script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
 <meta name="theme-color" content="#f8f4ee">
 <meta name="format-detection" content="telephone=no">
-<link rel="preload" href="renka.css" as="style">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Shippori+Mincho+B1:wght@400;500;600&family=Shippori+Mincho:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
