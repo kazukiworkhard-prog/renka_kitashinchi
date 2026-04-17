@@ -624,7 +624,7 @@ body.loaded .h-title-2{
   }
   .h-concept{border-left:none;padding-left:0;font-size:12px;line-height:2.2}
   /* スマホ: タイトルフォント・アニメーション・横ずれ */
-  .h-title{font-family:'Zen Old Mincho',serif}
+  .h-title{font-family:'Shippori Mincho B1',serif}
   .h-title-1{display:block;margin-left:0}
   .h-title-2{display:block;margin-left:0.6em}
   body.loaded .h-title-1{
