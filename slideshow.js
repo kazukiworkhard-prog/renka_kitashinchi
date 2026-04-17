@@ -1,18 +1,21 @@
-// Hero video autoplay fallback for mobile
+// Hero video autoplay (mobile-safe)
 (function(){
   var v = document.getElementById('hero-video');
   if(!v) return;
   v.muted = true;
-  var p = v.play();
-  if(p !== undefined){
-    p.catch(function(){
-      // Retry on first user interaction
-      document.addEventListener('touchstart', function retry(){
-        v.play().catch(function(){});
-        document.removeEventListener('touchstart', retry);
-      }, {once: true});
-    });
+
+  function tryPlay(){
+    v.play().catch(function(){});
   }
+
+  // Try immediately
+  tryPlay();
+
+  // Try again when enough data is ready
+  v.addEventListener('canplay', tryPlay, {once: true});
+
+  // Try again after loader hides (1.8s)
+  setTimeout(tryPlay, 2000);
 })();
 
 const hamburger = document.getElementById('nav-hamburger');
