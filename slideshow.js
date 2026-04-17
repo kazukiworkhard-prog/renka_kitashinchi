@@ -1,33 +1,3 @@
-/* ── SLIDESHOW ── */
-let slideIdx = 0;
-let slideTimer = null;
-const SLIDE_INTERVAL = 4000;
-
-function initSlideshow() {
-  startSlideshow();
-}
-
-function startSlideshow() {
-  clearInterval(slideTimer);
-  slideTimer = setInterval(() => nextSlide(), SLIDE_INTERVAL);
-}
-
-function nextSlide() {
-  goSlide((slideIdx + 1) % 4);
-}
-
-
-function goSlide(n) {
-  const slides = document.querySelectorAll('.hero-slide');
-  const dots = document.querySelectorAll('.slide-dot');
-  slides.forEach(s => s.classList.remove('active'));
-  dots.forEach(d => d.classList.remove('active'));
-  slides[n]?.classList.add('active');
-  dots[n]?.classList.add('active');
-  slideIdx = n;
-}
-
-
 const hamburger = document.getElementById('nav-hamburger');
 const drawer = document.getElementById('nav-drawer');
 
@@ -63,7 +33,7 @@ dishTimer = setInterval(() => goDish(dishIdx + 1), 4500);
   sl.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
   sl.addEventListener('touchend', e => {
     const dx = e.changedTouches[0].clientX - sx;
-    if (Math.abs(dx) > 40) { clearInterval(dishTimer); goDish(dishIdx + (dx < 0 ? 1 : -1)); dishTimer = setInterval(() => goDish(dishIdx + 1), 4500); }
+    if (Math.abs(dx) > 28) { clearInterval(dishTimer); goDish(dishIdx + (dx < 0 ? 1 : -1)); dishTimer = setInterval(() => goDish(dishIdx + 1), 4500); }
   }, { passive: true });
 })();
 

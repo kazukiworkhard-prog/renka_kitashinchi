@@ -3,34 +3,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>創作コース | 蓮花 RENKA — 北新地</title>
-<meta name="description" content="蓮花の創作コース（¥13,200〜）。産地直送の旬食材と季節のフルーツが織りなすフルコース。北新地の創作料理店。">
+<title>創作コース ¥13,200〜 | 蓮花 RENKA — 北新地 創作料理</title>
+<meta name="description" content="蓮花の創作コース（¥13,200〜）。産地直送の旬食材と季節のフルーツが織りなす9品のフルコース。生産者の声を皿で表現する、北新地の一夜限りの物語。記念日・接待に。">
+<link rel="canonical" href="https://renka-kitashinchi.com/course-sousaku.html">
+<meta property="og:type" content="restaurant.menu">
+<meta property="og:title" content="創作コース ¥13,200〜 | 蓮花 RENKA — 北新地">
+<meta property="og:description" content="産地直送の旬食材と季節のフルーツが織りなす9品のフルコース。蓮花の真髄を体験する特別なひとときを。北新地・大阪。">
+<meta property="og:url" content="https://renka-kitashinchi.com/course-sousaku.html">
+<meta property="og:image" content="https://renka-kitashinchi.com/ogp.jpg">
+<meta property="og:site_name" content="蓮花 RENKA">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="創作コース ¥13,200〜 | 蓮花 RENKA — 北新地">
+<meta name="twitter:description" content="産地直送の旬食材と季節のフルーツが織りなす9品のフルコース。北新地・大阪。">
+<meta name="twitter:image" content="https://renka-kitashinchi.com/ogp.jpg">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "MenuItem",
+    "name": "創作コース",
+    "description": "産地直送の旬食材と季節のフルーツが織りなす9品のフルコース。生産者の声を皿の上に表現する蓮花の真髄。",
+    "offers": {
+      "@type": "Offer",
+      "price": "13200",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
+    },
+    "inMenu": {
+      "@type": "Menu",
+      "name": "蓮花 コースメニュー",
+      "url": "https://renka-kitashinchi.com/#menu"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "蓮花 RENKA", "item": "https://renka-kitashinchi.com/"},
+      {"@type": "ListItem", "position": 2, "name": "コース料金", "item": "https://renka-kitashinchi.com/#menu"},
+      {"@type": "ListItem", "position": 3, "name": "創作コース", "item": "https://renka-kitashinchi.com/course-sousaku.html"}
+    ]
+  }
+]
+</script>
 <link rel="stylesheet" href="renka.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Shippori+Mincho+B1:wght@400;500;600&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ── COURSE PAGE ── */
+body{cursor:auto}
+
 .cp-wrap{
   min-height:100vh;
   background:var(--w2);
-  padding-top:var(--nav-h);
 }
+
+/* HERO */
 .cp-hero{
   background:#0f0d0b;
-  padding:72px 10vw 64px;
+  padding:80px 10vw 72px;
   position:relative;
   overflow:hidden;
   text-align:center;
 }
-.cp-hero::before{
+.cp-hero-bg{
+  position:absolute;inset:0;
+  background:url(写真/DSC07740.jpg) center/cover no-repeat;
+  opacity:.14;
+}
+.cp-hero::after{
   content:'花';
   position:absolute;right:-20px;top:50%;transform:translateY(-50%);
   font-family:'Shippori Mincho B1',serif;font-size:260px;
   color:rgba(255,255,255,.04);line-height:1;pointer-events:none;
+  z-index:0;
 }
+.cp-hero > *{position:relative;z-index:1}
 .cp-en{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:.65em;color:var(--gold);text-transform:uppercase;margin-bottom:16px;opacity:.8}
 .cp-title{font-family:'Shippori Mincho B1',serif;font-size:clamp(28px,5vw,48px);letter-spacing:.18em;color:#fff;font-weight:500;margin-bottom:12px}
 .cp-price{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,60px);font-weight:300;color:rgba(248,244,238,.9);line-height:1;margin-bottom:6px}
 .cp-ptax{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:12px;letter-spacing:.4em;color:rgba(154,120,40,.7)}
 
+/* BODY */
 .cp-body{max-width:720px;margin:0 auto;padding:64px 10vw}
 .cp-desc{font-family:'Shippori Mincho',serif;font-size:15px;line-height:2.8;color:var(--ch);letter-spacing:.06em;margin-bottom:56px;text-align:center}
 
@@ -41,22 +97,80 @@
 
 .cp-note{padding:22px 30px;border-left:2px solid var(--gold2);background:var(--w);font-size:13px;line-height:2.4;color:var(--warm);margin-top:40px}
 
+/* CTA */
 .cp-cta{text-align:center;padding:56px 0 0}
+.cp-cta-rsv{
+  display:inline-block;
+  background:var(--red);color:#fff;
+  font-family:'Shippori Mincho',serif;font-size:14px;letter-spacing:.28em;
+  padding:18px 52px;text-decoration:none;
+  transition:opacity .3s;
+  margin-bottom:16px;
+}
+.cp-cta-rsv:hover{opacity:.82}
+.cp-cta-tel{
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:13px;letter-spacing:.4em;color:var(--warm);text-decoration:none;
+  display:block;margin-top:8px;
+}
+
+/* nav: back link (desktop) */
 .cp-back{
-  display:inline-block;margin-bottom:24px;
   font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:11px;letter-spacing:.4em;color:var(--warm);
   text-decoration:none;text-transform:uppercase;
-  transition:color .3s;
+  transition:color .3s;white-space:nowrap;
 }
 .cp-back:hover{color:var(--ink)}
 .cp-back::before{content:'← ';letter-spacing:0}
 
+/* ── MOBILE BOTTOM BAR ── */
+#cp-mobile-bar{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;
+  z-index:1500;
+  background:rgba(248,244,238,.97);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-top:1px solid var(--bd);
+  padding:12px 16px;
+  padding-bottom:calc(12px + env(safe-area-inset-bottom));
+  gap:10px;
+}
+#cp-mobile-bar a{
+  flex:1;text-align:center;
+  padding:14px 0;
+  font-family:'Shippori Mincho',serif;font-size:12px;letter-spacing:.16em;
+  text-decoration:none;
+  transition:all .3s;
+  display:flex;align-items:center;justify-content:center;
+}
+.cp-bar-back{
+  border:1px solid rgba(0,0,0,.3);
+  color:var(--ink);
+  gap:4px;
+}
+.cp-bar-back:hover{background:rgba(0,0,0,.04)}
+.cp-bar-rsv{
+  background:var(--red);color:#fff;
+}
+.cp-bar-rsv:hover{opacity:.85}
+
+/* ── RESPONSIVE ── */
 @media(max-width:900px){
   .cp-hero{padding:52px 24px 44px}
   .cp-body{padding:40px 20px}
   .cp-desc{font-size:13px;line-height:2.4;margin-bottom:36px}
   .cp-note{padding:16px 18px;font-size:12px;line-height:2}
+  /* hide desktop back link; hamburger handles nav */
+  .cp-nav-right .cp-back{display:none}
+}
+@media(max-width:768px){
+  #cp-mobile-bar{display:flex}
+  .cp-wrap{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+  .cp-desc{word-break:keep-all}
+  .cp-cta{padding:40px 0 0}
+  .cp-cta-rsv{width:100%;display:block;padding:16px 24px;box-sizing:border-box}
 }
 </style>
 </head>
@@ -67,9 +181,50 @@
   <button class="nlogo" onclick="location.href='index.html'" style="background:none;border:none;cursor:pointer;padding:0">
     <span class="nlogo-t">蓮花</span>
   </button>
-  <div style="margin-left:auto;display:flex;align-items:center;gap:20px">
-    <a href="index.html#menu" class="cp-back" style="margin:0;font-size:10px">メニューへ戻る</a>
-    <a href="https://tabelog.com/osaka/A2701/A270101/27146515/" target="_blank" rel="noopener" class="ncta">ご予約</a>
+
+  <div class="cp-nav-right" style="margin-left:auto;display:flex;align-items:center;gap:20px">
+    <a href="index.html#menu" class="cp-back">メニューへ戻る</a>
+  </div>
+
+  <!-- ハンバーガー（モバイル・タブレット） -->
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="メニュー" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ドロワー -->
+  <div class="nav-drawer" id="nav-drawer">
+    <ul class="nav-drawer-links">
+      <li>
+        <a href="index.html" class="nav-drawer-link">
+          <span class="nav-en">Home</span>
+          <span class="nav-ja">トップへ戻る</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#concept" class="nav-drawer-link">
+          <span class="nav-en">Concept</span>
+          <span class="nav-ja">蓮花について</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#menu" class="nav-drawer-link">
+          <span class="nav-en">Course</span>
+          <span class="nav-ja">コース料金</span>
+        </a>
+      </li>
+      <li>
+        <a href="index.html#gallery" class="nav-drawer-link">
+          <span class="nav-en">Dishes</span>
+          <span class="nav-ja">料理内容</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://tabelog.com/osaka/A2701/A270101/27146515/" target="_blank" rel="noopener" class="nav-drawer-link">
+          <span class="nav-en">Reserve</span>
+          <span class="nav-ja">食べログで予約</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </nav>
 
@@ -77,6 +232,7 @@
 
   <!-- HERO -->
   <div class="cp-hero">
+    <div class="cp-hero-bg"></div>
     <p class="cp-en">Signature Course</p>
     <h1 class="cp-title">創作コース</h1>
     <p class="cp-price">¥13,200</p>
@@ -141,24 +297,35 @@
 
     <!-- CTA -->
     <div class="cp-cta">
-      <a href="https://tabelog.com/osaka/A2701/A270101/27146515/" target="_blank" rel="noopener"
-        style="display:inline-block;background:var(--red);color:#fff;font-family:'Shippori Mincho',serif;font-size:14px;letter-spacing:.28em;padding:18px 52px;text-decoration:none;transition:opacity .3s;margin-bottom:16px">
+      <a href="https://tabelog.com/osaka/A2701/A270101/27146515/" target="_blank" rel="noopener" class="cp-cta-rsv">
         食べログで予約する
-      </a><br>
-      <a href="tel:050-5595-5172"
-        style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13px;letter-spacing:.4em;color:var(--warm);text-decoration:none">
-        050-5595-5172
       </a>
+      <a href="tel:050-5595-5172" class="cp-cta-tel">050-5595-5172</a>
     </div>
 
   </div>
 </div>
 
+<!-- モバイル固定下部バー -->
+<div id="cp-mobile-bar">
+  <a href="index.html#menu" class="cp-bar-back">← メニューへ戻る</a>
+  <a href="https://tabelog.com/osaka/A2701/A270101/27146515/" target="_blank" rel="noopener" class="cp-bar-rsv">食べログで予約する</a>
+</div>
+
 <script>
+document.body.classList.add('nav-revealed');
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => nav.classList.toggle('sc', scrollY > 60));
-// このページを訪れた記録を残す（index.htmlに戻った時にローダーをスキップ）
 sessionStorage.setItem('fromCoursePage', '1');
+
+// ハンバーガーメニュー
+const hamburger = document.getElementById('nav-hamburger');
+const drawer = document.getElementById('nav-drawer');
+hamburger.addEventListener('click', () => {
+  const isOpen = hamburger.classList.toggle('open');
+  drawer.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
 </script>
 </body>
 </html>
