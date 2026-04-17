@@ -108,8 +108,7 @@
 <div id="cr"><div id="cri"></div></div>
 <!-- LOADER -->
 <div id="loader">
-  <video id="loader-video" src="動画/Video Project 1.mp4" autoplay muted playsinline loop></video>
-  <div id="loader-lotus">
+<div id="loader-lotus">
     <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <radialGradient id="pg" cx="50%" cy="75%" r="60%">
@@ -255,7 +254,7 @@
       preload="metadata"
       poster="写真/hero-poster.webp"
     >
-      <source src="動画/Video Project 2.mp4" type="video/mp4">
+      <source src="動画/hero.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
     <div class="hero-frame-tl"></div>
@@ -379,12 +378,12 @@
     <h2 class="sjp rv d1">料理内容</h2>
   </div>
   <div class="dish-slider">
-    <div class="dish-slide active" style="background-image:url(写真/DSC07699.webp)"></div>
-    <div class="dish-slide" style="background-image:url(写真/DSC09683.webp)"></div>
-    <div class="dish-slide" style="background-image:url(写真/DSC09827.webp)"></div>
-    <div class="dish-slide" style="background-image:url(写真/DSC09659.webp)"></div>
-    <div class="dish-slide" style="background-image:url(写真/DSC09817-2.webp)"></div>
-    <div class="dish-slide" style="background-image:url(写真/DSC07749.webp)"></div>
+    <div class="dish-slide active" data-bg="写真/DSC07699.webp"></div>
+    <div class="dish-slide" data-bg="写真/DSC09683.webp"></div>
+    <div class="dish-slide" data-bg="写真/DSC09827.webp"></div>
+    <div class="dish-slide" data-bg="写真/DSC09659.webp"></div>
+    <div class="dish-slide" data-bg="写真/DSC09817-2.webp"></div>
+    <div class="dish-slide" data-bg="写真/DSC07749.webp"></div>
     <button class="dish-prev" aria-label="前の写真">&#8249;</button>
     <button class="dish-next" aria-label="次の写真">&#8250;</button>
     <div class="dish-dots">
@@ -519,7 +518,7 @@
   <p class="past-menu-lead rv">これまでにご好評いただいた一品をご紹介します。</p>
   <div class="past-menu-grid">
     <div class="pm-card rv d1" data-ig="https://www.instagram.com/p/DVdVVhlD97u/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-      <div class="pm-img-wrap" id="pm-img-0" style="background-image:url(写真/DSC07721.webp);background-size:cover;background-position:center">
+      <div class="pm-img-wrap" id="pm-img-0" data-bg="写真/DSC07721.webp">
         <div class="pm-img-placeholder">
           <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <rect width="120" height="80" fill="#f0e8dc"/>
@@ -534,7 +533,7 @@
       </div>
     </div>
     <div class="pm-card rv d2" data-ig="https://www.instagram.com/p/DWTYsGpj-8a/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-      <div class="pm-img-wrap" id="pm-img-1" style="background-image:url(写真/DSC09692.webp);background-size:cover;background-position:center">
+      <div class="pm-img-wrap" id="pm-img-1" data-bg="写真/DSC09692.webp">
         <div class="pm-img-placeholder">
           <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <rect width="120" height="80" fill="#f0e8dc"/>
@@ -551,7 +550,7 @@
       </div>
     </div>
     <div class="pm-card rv d3" data-ig="https://www.instagram.com/p/DWLklwcj7VB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-      <div class="pm-img-wrap" id="pm-img-2" style="background-image:url(写真/DSC09668.webp);background-size:cover;background-position:center">
+      <div class="pm-img-wrap" id="pm-img-2" data-bg="写真/DSC09668.webp">
         <div class="pm-img-placeholder">
           <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <rect width="120" height="80" fill="#f0e8dc"/>
@@ -566,7 +565,7 @@
       </div>
     </div>
     <div class="pm-card rv d4" data-ig="https://www.instagram.com/p/DWGuo1sD5NG/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">
-      <div class="pm-img-wrap" id="pm-img-3" style="background-image:url(写真/DSC09657.webp);background-size:cover;background-position:center">
+      <div class="pm-img-wrap" id="pm-img-3" data-bg="写真/DSC09657.webp">
         <div class="pm-img-placeholder">
           <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
             <rect width="120" height="80" fill="#f0e8dc"/>
@@ -593,7 +592,7 @@
   </div>
   <div class="prod-grid">
     <div class="prod-card rv d1">
-      <div class="prod-card-bg" style="background-image:url(写真/DSC09817-2.webp)"></div>
+      <div class="prod-card-bg" data-bg="写真/DSC09817-2.webp"></div>
       <div class="prod-card-body">
         <p class="prod-region">Kagoshima · Japan</p>
         <h3 class="prod-name">うすなが牛</h3>
@@ -601,7 +600,7 @@
       </div>
     </div>
     <div class="prod-card rv d2">
-      <div class="prod-card-bg" style="background-image:url(写真/DSC09827.webp)"></div>
+      <div class="prod-card-bg" data-bg="写真/DSC09827.webp"></div>
       <div class="prod-card-body">
         <p class="prod-region">Tokachi · Hokkaido</p>
         <h3 class="prod-name">十勝マンガリッツァ豚</h3>
@@ -609,7 +608,7 @@
       </div>
     </div>
     <div class="prod-card rv d3">
-      <div class="prod-card-bg" style="background-image:url(写真/DSC07749.webp)"></div>
+      <div class="prod-card-bg" data-bg="写真/DSC07749.webp"></div>
       <div class="prod-card-body">
         <p class="prod-region">Seasonal · Direct from Producers</p>
         <h3 class="prod-name">旬のフルーツ</h3>
@@ -1048,5 +1047,21 @@ document.addEventListener('DOMContentLoaded', function(){
   </div>
 </div>
 
+
+<script>
+(function(){
+  var els = document.querySelectorAll('[data-bg]');
+  if(!els.length) return;
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        e.target.style.backgroundImage = 'url(' + e.target.dataset.bg + ')';
+        io.unobserve(e.target);
+      }
+    });
+  },{rootMargin:'200px'});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
 </body>
 </html>
