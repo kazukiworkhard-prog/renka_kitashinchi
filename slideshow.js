@@ -1,20 +1,24 @@
-// Hero video autoplay (mobile-safe)
+// Hero video autoplay with Low Power Mode fallback
 (function(){
   var v = document.getElementById('hero-video');
+  var poster = document.getElementById('hero-poster-img');
   if(!v) return;
   v.muted = true;
 
   function tryPlay(){
-    v.play().catch(function(){});
+    var p = v.play();
+    if(p === undefined) return;
+    p.then(function(){
+      // Autoplay succeeded: hide poster image
+      if(poster) poster.style.display = 'none';
+    }).catch(function(){
+      // Autoplay blocked (Low Power Mode etc): hide video, show poster
+      v.style.display = 'none';
+      if(poster) poster.style.display = 'block';
+    });
   }
 
-  // Try immediately
-  tryPlay();
-
-  // Try again when enough data is ready
   v.addEventListener('canplay', tryPlay, {once: true});
-
-  // Try again after loader hides (1.8s)
   setTimeout(tryPlay, 2000);
 })();
 

@@ -89,7 +89,7 @@
 .skip-loader #loader{display:none!important}
 #hero{position:relative;overflow:hidden;}
 .hero-r{position:absolute;inset:0;z-index:0;background:#17130e;overflow:hidden;}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;display:block;}
 </style>
 <link rel="preload" href="renka.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="renka.css"></noscript>
@@ -249,6 +249,7 @@
 <section id="hero">
   <!-- 背景: 動画フルスクリーン -->
   <div class="hero-r">
+    <img id="hero-poster-img" src="写真/hero-poster.webp" class="hero-video" alt="" aria-hidden="true" fetchpriority="high">
     <video
       id="hero-video"
       class="hero-video"
@@ -257,7 +258,6 @@
       loop
       playsinline
       preload="auto"
-      poster="写真/hero-poster.webp"
     >
       <source src="video/hero.mp4" type="video/mp4">
     </video>
